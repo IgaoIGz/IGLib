@@ -1,0 +1,170 @@
+/* Definição de estilos para o corpo do site */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(236, 236, 236);
+}
+
+header img {
+    margin: auto;
+    grid-column: 2/2;
+}
+
+/*Estilos para o main*/
+main {
+    min-height: calc(100vh - 100px); /* altura mínima é a altura da viewport (100vh) menos 100px para o footer */
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto auto;
+}
+
+main p {
+    margin: 0px;
+    text-align: center;
+}
+
+main h2{
+    text-align: center;
+}
+
+/* Estilos para as seções */
+.SecUm {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.cadlogin{
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0px;
+}
+
+.cadastro {
+    transition-duration: 0.4s;
+    width: 300px;
+    background-color: white;
+    grid-column: 1/1;
+    margin: auto;
+    text-align: center;
+    border: 2px solid orangered;
+    text-decoration: none;
+    color: black;
+    padding: 30px 0px;
+    border-radius: 3px;
+}
+
+.cadastro:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.login {
+    transition-duration: 0.4s;
+    width: 300px;
+    background-color: white;
+    grid-column: 2/2;
+    margin: auto;
+    text-align: center;
+    border: 2px solid orangered;
+    text-decoration: none;
+    color: black;
+    padding: 30px 0px;
+    border-radius: 3px;
+}
+
+.login:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* Estilos para o rodapé */
+footer {
+    width: 100%;
+    height: 60px; /* Altura do footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+footer p {
+    margin: 0px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+@media screen and (max-width: 830px){
+    .cadlogin {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .cadastro {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .login {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .cadastro {
+        width: auto;
+        padding: 20px 30px;
+    }
+
+    .login {
+        width: auto;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 225px){
+
+    .cadastro {
+        padding: 1px 2px;
+    }
+
+    .login {
+        padding: 1px 2px;
+    }
+}

@@ -1,0 +1,29 @@
+create database IGLib
+default character set utf8
+default collate utf8_general_ci;
+
+use IGLib;
+
+CREATE TABLE Livro (
+    cod_livro INT PRIMARY KEY auto_increment,
+    nome VARCHAR(255) not null,
+    autor VARCHAR(255) not null,
+    editora VARCHAR(90) not null,
+    edicao INT null,
+    ano INT not null,
+    pags INT not null,
+    idioma VARCHAR(90) null,
+    estoque int not null
+);
+
+create table Usuario (
+cod_usuario int primary key auto_increment,
+nome_usuario varchar(90) not null unique,
+senha_usuario varchar(30) not null,
+email_usuario varchar(90) not null unique,
+tel_usuario varchar(16) null
+);
+
+select * from Usuario;
+
+select * from Livro;

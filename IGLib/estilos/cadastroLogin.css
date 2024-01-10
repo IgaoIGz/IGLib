@@ -1,0 +1,98 @@
+/* ESTILO BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.textbox {
+    display: block;
+    width: 100%;
+}
+
+.button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(213, 57, 0);
+}
+
+.required::after {
+    content:"*"; 
+    color: red;
+}
+
+.alert {
+    border: 1px solid black;
+    background-color: orangered;
+    padding: 10px;
+    animation: fadeOut 9s forwards;
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.alert p {
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+}
+
+.center {
+    margin: 100px auto 100px auto;
+    min-width: 220px;
+    width: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.centeraviso {
+    position: relative;
+    margin: auto;
+    min-width: 220px;
+    width: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.erro {
+    text-align: center;
+    background-color: orangered;
+    margin: 10px auto;
+    min-width: 220px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.erro p{
+    padding: 20px;
+}
